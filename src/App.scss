@@ -1,0 +1,176 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 8rem;
+  justify-content: center;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .top-panel {
+      display: flex;
+      flex-direction: column;
+      .tree-start {
+        width: 300px;
+        height: 62px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid #dfe1e1;
+        background: #fff;
+      }
+      .connector {
+        align-self: center;
+        width: 1px;
+        height: 20px;
+        background: #bbb;
+      }
+      .plus-btn {
+        align-self: center;
+        padding: 9px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        border-radius: 8px;
+        border: 1px solid #e0e0e0;
+        background: #fff;
+      }
+      .step-1 {
+        @extend .tree-start;
+      }
+      .step-2 {
+        @extend .tree-start;
+      }
+    }
+    .bottom-panel {
+      .left {
+        position: relative;
+        .bottom-connector {
+          position: absolute;
+          left: -90px;
+          width: 1px;
+          height: 20px;
+          background: #bbb;
+        }
+        .sub-tree1 {
+          position: absolute;
+          top: 20px;
+          left: -125px;
+          width: 72px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 4px;
+          border-radius: 6px;
+          border: 1px solid #e0e0e0;
+          background: #fff;
+        }
+        .bottom-line1 {
+          position: absolute;
+          top: 50px;
+          left: -115px;
+          width: 24.5px;
+          height: 38px;
+        }
+        .plus-btn {
+          position: absolute;
+          top: 84px;
+          left: -164px;
+          padding: 9px 16px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 8px;
+          border: 1px solid #e0e0e0;
+          background: #fff;
+        }
+        .bottom-line2 {
+          position: absolute;
+          width: 26px;
+          height: 46px;
+          top: 118px;
+          left: -186px;
+        }
+        .bottom-step-1 {
+          position: absolute;
+          top: 163px;
+          left: -335px;
+          width: 300px;
+          height: 62px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+          border: 1px solid #dfe1e1;
+          background: #fff;
+        }
+      }
+      .right {
+        position: relative;
+        .bottom-connector {
+          position: absolute;
+          left: 90px;
+          width: 1px;
+          height: 20px;
+          background: #bbb;
+        }
+        .sub-tree1 {
+          position: absolute;
+          top: 20px;
+          left: 55px;
+          width: 72px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 4px;
+          border-radius: 6px;
+          border: 1px solid #e0e0e0;
+          background: #fff;
+        }
+        .bottom-line1 {
+          position: absolute;
+          top: 50px;
+          left: 90px;
+          width: 24.5px;
+          height: 38px;
+        }
+        .plus-btn {
+          position: absolute;
+          top: 84px;
+          left: 110px;
+          padding: 9px 16px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 8px;
+          border: 1px solid #e0e0e0;
+          background: #fff;
+        }
+        .bottom-line2 {
+          position: absolute;
+          width: 26px;
+          height: 46px;
+          top: 118px;
+          left: 160px;
+        }
+        .bottom-step-1 {
+          position: absolute;
+          top: 163px;
+          left: 35px;
+          width: 300px;
+          height: 62px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+          border: 1px solid #dfe1e1;
+          background: #fff;
+        }
+      }
+    }
+  }
+}
